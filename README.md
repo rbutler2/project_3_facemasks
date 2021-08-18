@@ -9,7 +9,7 @@
 ##### The dataset is from Kaggle (https://www.kaggle.com/vijaykumar1799/face-mask-detection). It contains a total of 8982 128 x 128 images of individuals evenly split into three directories mask_weared_incorrect, with_mask, and without_mask.
 
 ----
-## model.ipynb.ipynb
+## model.ipynb
 ##### This is a jupyter notebook used to create, train, and save the model. It uses the libraries matplotlib, NumPy, os, PIL, TensorFlow, and pandas. The dataset is split into two parts, 80% training, and 20% validation. Following the split of the dataset, a model is created for image classification. The model is then fitted with 100 epochs and a callback function to stop early when validation lost is at its' minimum with a patience of 10. After the model is fitted the accuracy and loss data is put into a pandas dataframe and plotted. the model is then saved under the name my_model.h5.
 
 ----
