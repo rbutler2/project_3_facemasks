@@ -124,4 +124,3 @@ while code_live == True:
         # plt_imshow(f'Image', image,8)
 
         code_live = False
-
