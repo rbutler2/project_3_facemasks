@@ -20,8 +20,12 @@
 
 ----
 ## YouGov data and analysis
-##### Tableau was used to do some analysis over data pulled from YouGov. The data was covering the percentage of people that wore mask out in public from different countries around the world. The first graph is just covering the percentage of people in USA that wore mask in public. The other three graphs cover different regions of the world and how they differ from each other. The analysis can be seen on the github pages.
+##### Tableau was used to do some analysis over data pulled from YouGov. The data was covering the percentage of people that wore mask out in public from different countries around the world. The first graph is just covering the percentage of people in USA that wore mask in public. The other three graphs cover different regions of the world and how they differ from each other. The analysis can be seen at https://rbutler2.github.io/project_3_facemasks/YouGov.html.
 
 ----
 ## Collaborators
 ##### Richard Butler, Jared Sanderson, Braxton Van Cleave, and Sean Waters.
+
+----
+## Github pages
+##### https://rbutler2.github.io/project_3_facemasks/index.html
