@@ -54,7 +54,7 @@ while code_live == True:
         image = input('type file path here: \n')
 
     else:
-        image = input('type url here: \n')
+        url = input('type url here: \n')
         try:
             image = Image.open(requests.get(url, stream=True).raw)
             image.save('temp_image/new.jpg')
