@@ -43,21 +43,25 @@ def plt_imshow(title, image, size=4):
     plt.grid(False)
     plt.show()
 
-url = 'https://as01.epimg.net/en/imagenes/2021/07/28/latest_news/1627501245_454307_1627501474_noticia_normal_recorte1.jpg'
-url = input('url:\n')
+# url = 'https://as01.epimg.net/en/imagenes/2021/07/28/latest_news/1627501245_454307_1627501474_noticia_normal_recorte1.jpg'
+
+url_file = input('Are you uploading a URL or a file? (u/f): \n')
 
 code_live = True
 
 while code_live == True:
-    try:
-        image = Image.open(requests.get(url, stream=True).raw)
-        image.save('temp_image/new.jpg')
-        image = 'temp_image/new.jpg'
+    if url_file == 'f':
+        image = input('type file path here: \n')
 
-    except:
-        print("URL Error")
-        code_live = False
+    else:
+        try:
+            image = Image.open(requests.get(url, stream=True).raw)
+            image.save('temp_image/new.jpg')
+            image = 'temp_image/new.jpg'
 
+        except:
+            print("URL Error")
+            code_live = False
 
     args = {
     "shape_predictor": "shape_predictor_68_face_landmarks.dat",
