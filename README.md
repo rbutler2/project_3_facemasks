@@ -14,9 +14,10 @@
 
 ----
 ## face_detection.py & prediction.ipynb
-##### The faces_from_url_2.py file utilizes dlib functions to detect faces within an image. The “shape_predictor_68_face_landmarks.dat” model file has been trained to recognize facial point annotations and we used this model file to assist dlib’s “get_frontal_face_detector” function.
+##### face_detection.py file utilizes dlib functions to detect faces within an image. The “shape_predictor_68_face_landmarks.dat” model file has been trained to recognize facial point annotations and we used this model file to assist dlib’s “get_frontal_face_detector” function.
 ##### By grabbing the upper and lower rectangle points among each identifiable face in the image, we can then individually crop the image by each occurrence and save to a folder which will later be used with our TensorFlow mask identifying model.
 ##### The user has the option of providing a web-based image from a URL or they can upload a local image file.
+##### In predection.ipynb we load the saved model and import face_detection.py so we can use tensorflow's model.predict in a for loop to iterate through the saved images to predict their classes and confidence percentage.  
 
 ----
 ## YouGov data and analysis
